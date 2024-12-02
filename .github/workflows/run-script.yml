@@ -24,7 +24,7 @@ jobs:
 
     - name: Run script
       env:
-        GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
+        GOOGLE_CREDENTIALS_PATH: ${{ secrets.GOOGLE_CREDENTIALS }}
         GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
         UPDATE_INTERVAL: ${{ secrets.UPDATE_INTERVAL }}
         
