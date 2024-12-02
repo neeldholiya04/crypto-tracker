@@ -1,0 +1,46 @@
+2024-12-02 19:03:54,603 - ERROR - Failed to initialize Google Sheets client: 
+2024-12-02 19:04:11,968 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-12-02 19:04:14,094 - INFO - Attempting refresh to obtain initial access_token
+2024-12-02 19:04:14,110 - INFO - Refreshing access_token
+2024-12-02 19:05:20,434 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:07:23,113 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-12-02 19:07:25,043 - INFO - Attempting refresh to obtain initial access_token
+2024-12-02 19:07:25,074 - INFO - Refreshing access_token
+2024-12-02 19:07:28,829 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:08:33,152 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:10:13,095 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-12-02 19:10:15,201 - INFO - Attempting refresh to obtain initial access_token
+2024-12-02 19:10:15,216 - INFO - Refreshing access_token
+2024-12-02 19:10:18,831 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:11:23,896 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:12:29,305 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:12:47,533 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-12-02 19:12:49,489 - INFO - Attempting refresh to obtain initial access_token
+2024-12-02 19:12:49,505 - INFO - Refreshing access_token
+2024-12-02 19:12:53,562 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:13:28,745 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:14:04,531 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:14:39,747 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:15:14,961 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:15:50,167 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:16:25,223 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:17:00,462 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:17:35,830 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:18:10,856 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:18:46,160 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:19:21,368 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:19:56,621 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:20:31,873 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:21:07,000 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:21:41,970 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:22:17,121 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:22:52,135 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:23:27,937 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:24:03,127 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:24:38,407 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:25:13,859 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:25:49,310 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:26:24,360 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:26:59,570 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:27:35,008 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:28:11,675 - INFO - Crypto analysis update completed successfully
