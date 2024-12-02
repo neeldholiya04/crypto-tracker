@@ -1,0 +1,33 @@
+name: Run Crypto Analysis Script
+
+on:
+  schedule:
+    - cron: '1 * * * *'  # Run every hour
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.12'
+
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+
+    - name: Run script
+      env:
+        GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
+        GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
+        UPDATE_INTERVAL: ${{ secrets.UPDATE_INTERVAL }}
+        
+      run: |
+        echo "$GOOGLE_CREDENTIALS" > credentials.json
+        python main.py
