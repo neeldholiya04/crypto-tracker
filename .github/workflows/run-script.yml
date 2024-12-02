@@ -16,7 +16,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.12'
+        python-version: '3.10'
 
     - name: Install dependencies
       run: |
@@ -25,6 +25,7 @@ jobs:
     - name: Write credentials to file
       run: |
         echo "$GOOGLE_CREDENTIALS" > credentials.json
+        cat credentials.json  # Debug: Check if the file is correctly created
       env:
         GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
 
@@ -34,4 +35,5 @@ jobs:
         GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
         UPDATE_INTERVAL: ${{ secrets.UPDATE_INTERVAL }}
       run: |
+        ls -la  # Debug: Verify working directory and file presence
         python main.py
