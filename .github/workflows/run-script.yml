@@ -22,18 +22,18 @@ jobs:
       run: |
         pip install -r requirements.txt
 
-    - name: Write credentials to file
+    - name: Write credentials to an absolute path
       run: |
-        echo "$GOOGLE_CREDENTIALS" > credentials.json
-        cat credentials.json  # Debug: Check if the file is correctly created
+        echo "$GOOGLE_CREDENTIALS" > /home/runner/work/credentials.json
+        cat /home/runner/work/credentials.json  # Debug: Check if file is created correctly
       env:
         GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
 
     - name: Run script
       env:
-        GOOGLE_CREDENTIALS_PATH: credentials.json
+        GOOGLE_CREDENTIALS_PATH: /home/runner/work/credentials.json
         GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
         UPDATE_INTERVAL: ${{ secrets.UPDATE_INTERVAL }}
       run: |
-        ls -la  # Debug: Verify working directory and file presence
+        ls -la /home/runner/work  # Debug: Ensure file exists at absolute path
         python main.py
