@@ -2,7 +2,7 @@ name: Run Crypto Analysis Script
 
 on:
   schedule:
-    - cron: '1 * * * *'  # Run every hour
+    - cron: '*/1 * * * *'  # Runs every minute
   workflow_dispatch:  # Allow manual trigger
 
 jobs:
@@ -22,12 +22,16 @@ jobs:
       run: |
         pip install -r requirements.txt
 
-    - name: Run script
-      env:
-        GOOGLE_CREDENTIALS_PATH: ${{ secrets.GOOGLE_CREDENTIALS }}
-        GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
-        UPDATE_INTERVAL: ${{ secrets.UPDATE_INTERVAL }}
-        
+    - name: Write credentials to file
       run: |
         echo "$GOOGLE_CREDENTIALS" > credentials.json
+      env:
+        GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
+
+    - name: Run script
+      env:
+        GOOGLE_CREDENTIALS_PATH: credentials.json
+        GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
+        UPDATE_INTERVAL: ${{ secrets.UPDATE_INTERVAL }}
+      run: |
         python main.py
