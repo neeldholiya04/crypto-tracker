@@ -1,6 +1,6 @@
 import requests
 import pandas as pd
-
+from datetime import datetime
 
 class CryptoService:
     API_URL = "https://api.coingecko.com/api/v3/coins/markets"
@@ -18,10 +18,17 @@ class CryptoService:
             response = requests.get(CryptoService.API_URL, params=CryptoService.DEFAULT_PARAMS)
             response.raise_for_status()
             data = response.json()
-            return pd.DataFrame(data, columns=[
+            df = pd.DataFrame(data, columns=[
                 "name", "symbol", "current_price", "market_cap",
                 "total_volume", "price_change_percentage_24h"
             ])
+
+            # Add a timestamp column
+            timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            df["Timestamp"] = timestamp
+
+            return df
+
         except requests.exceptions.RequestException as e:
             print(f"Error fetching cryptocurrency data: {e}")
             return None

@@ -44,3 +44,51 @@
 2024-12-02 19:26:59,570 - INFO - Crypto analysis update completed successfully
 2024-12-02 19:27:35,008 - INFO - Crypto analysis update completed successfully
 2024-12-02 19:28:11,675 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:28:46,766 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:29:21,803 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:29:57,057 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:30:32,386 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:31:07,908 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:31:43,276 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:32:19,391 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:32:54,646 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:33:29,737 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:34:05,043 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:34:40,168 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:35:15,366 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:35:50,470 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:36:25,593 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:37:00,660 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:37:36,174 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:38:11,440 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:38:46,606 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:39:21,673 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:39:56,729 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:40:32,031 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:41:07,386 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:41:42,803 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:42:17,871 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:42:52,985 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:43:28,102 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:44:03,251 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:44:38,958 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:45:14,508 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:45:49,619 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:46:25,132 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:47:00,192 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:47:35,220 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:48:10,728 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:48:46,775 - INFO - Crypto analysis update completed successfully
+2024-12-02 19:49:22,015 - INFO - Crypto analysis update completed successfully
+2024-12-03 12:24:23,589 - INFO - Refreshing due to a 401 (attempt 1/2)
+2024-12-03 12:24:23,643 - INFO - Refreshing access_token
+2024-12-03 12:24:23,649 - INFO - Crypto analysis update completed successfully
+2024-12-03 12:31:05,886 - INFO - Crypto analysis update completed successfully
+2024-12-03 12:32:44,264 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-12-03 12:33:19,099 - INFO - Attempting refresh to obtain initial access_token
+2024-12-03 12:33:19,167 - INFO - Refreshing access_token
+2024-12-03 12:33:29,036 - INFO - Crypto analysis update completed successfully
+2024-12-03 12:40:01,251 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-12-03 12:40:03,960 - INFO - Attempting refresh to obtain initial access_token
+2024-12-03 12:40:03,993 - INFO - Refreshing access_token
+2024-12-03 12:40:08,868 - INFO - Crypto analysis update completed successfully
