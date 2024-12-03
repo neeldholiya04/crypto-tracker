@@ -1,0 +1,37 @@
+name: Run Crypto Analysis Script
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+
+    - name: Write credentials to an absolute path
+      run: |
+        echo "$GOOGLE_CREDENTIALS" > /home/runner/work/credentials.json
+        cat /home/runner/work/credentials.json  # Debug: Check if file is created correctly
+      env:
+        GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
+
+    - name: Run script
+      env:
+        GOOGLE_CREDENTIALS_PATH: /home/runner/work/credentials.json
+        GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
+        UPDATE_INTERVAL: ${{ secrets.UPDATE_INTERVAL }}
+      run: |
+        ls -la /home/runner/work  # Debug: Ensure file exists at absolute path
+        python main.py
