@@ -12,21 +12,18 @@ def format_data_frame(data_frame):
     - Formats currency and percentage fields
     """
     try:
-        # Ensure numeric conversion for currency fields
         currency_columns = ["Current Price (USD)", "Market Cap (USD)", "Total Volume (USD)"]
         for col in currency_columns:
             if col in data_frame.columns:
                 data_frame[col] = pd.to_numeric(data_frame[col], errors="coerce")
                 data_frame[col] = data_frame[col].apply(lambda x: f"${x:,.2f}" if pd.notna(x) else "N/A")
 
-        # Format percentage fields
         percentage_columns = ["24h Price Change (%)"]
         for col in percentage_columns:
             if col in data_frame.columns:
                 data_frame[col] = pd.to_numeric(data_frame[col], errors="coerce")
                 data_frame[col] = data_frame[col].apply(lambda x: f"{x:.2f}%" if pd.notna(x) else "N/A")
 
-        # Capitalize the 'Symbol' column
         if "Symbol" in data_frame.columns:
             data_frame["Symbol"] = data_frame["Symbol"].str.upper()
 
@@ -40,7 +37,6 @@ def beautify_sheet(sheet, service, sheet_id):
     Includes column width adjustment, bold headers, alignment, freezing the header row, and adding borders.
     """
     try:
-        # Prepare formatting requests
         requests = [
             # Column Width Requests
             {
@@ -52,7 +48,7 @@ def beautify_sheet(sheet, service, sheet_id):
                         "endIndex": 1
                     },
                     "properties": {
-                        "pixelSize": 250  # Adjust column width for "Name"
+                        "pixelSize": 250
                     },
                     "fields": "pixelSize"
                 }
@@ -66,7 +62,7 @@ def beautify_sheet(sheet, service, sheet_id):
                         "endIndex": 2
                     },
                     "properties": {
-                        "pixelSize": 120  # Adjust column width for "Symbol"
+                        "pixelSize": 120
                     },
                     "fields": "pixelSize"
                 }
@@ -80,7 +76,7 @@ def beautify_sheet(sheet, service, sheet_id):
                         "endIndex": 6
                     },
                     "properties": {
-                        "pixelSize": 200  # Adjust column width for other fields
+                        "pixelSize": 200
                     },
                     "fields": "pixelSize"
                 }
@@ -183,12 +179,12 @@ def beautify_sheet(sheet, service, sheet_id):
         ).execute()
 
         # Apply header cell styling using gspread-formatting
-        header_range = f"A1:{chr(65 + sheet.col_count - 1)}1"  # Calculate header range dynamically
+        header_range = f"A1:{chr(65 + sheet.col_count - 1)}1"
         format_cell_range(sheet, header_range, CellFormat(
-            backgroundColor=Color(0.129, 0.588, 0.953),  # Blue background
+            backgroundColor=Color(0.129, 0.588, 0.953),
             textFormat=TextFormat(
                 bold=True,
-                foregroundColor=Color(1, 1, 1)  # White text
+                foregroundColor=Color(1, 1, 1)
             ),
             horizontalAlignment="CENTER"
         ))

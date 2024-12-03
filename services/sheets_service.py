@@ -1,9 +1,7 @@
 import gspread
 from gspread.exceptions import WorksheetNotFound
 from services.formatting_service import beautify_sheet
-from utils.common import safe_format_value
 import time
-import pandas as pd
 
 
 class GoogleSheets:

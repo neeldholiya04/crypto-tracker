@@ -92,3 +92,12 @@
 2024-12-03 12:40:03,960 - INFO - Attempting refresh to obtain initial access_token
 2024-12-03 12:40:03,993 - INFO - Refreshing access_token
 2024-12-03 12:40:08,868 - INFO - Crypto analysis update completed successfully
+2024-12-03 12:40:31,188 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-12-03 12:40:33,710 - INFO - Attempting refresh to obtain initial access_token
+2024-12-03 12:40:33,741 - INFO - Refreshing access_token
+2024-12-03 12:40:38,733 - INFO - Crypto analysis update completed successfully
+2024-12-03 12:41:14,174 - INFO - Crypto analysis update completed successfully
+2024-12-03 12:41:49,362 - INFO - Crypto analysis update completed successfully
+2024-12-03 14:07:04,624 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-12-03 14:07:07,078 - INFO - Attempting refresh to obtain initial access_token
+2024-12-03 14:07:07,108 - INFO - Refreshing access_token
